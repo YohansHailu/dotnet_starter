@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YeUH7kYZ3wQvJU134C2cMhE+XWI3+TBsOWhWxWpJOU1G1hdmgHmLCPj4jTB6gBh7VrPDgD384XoBzR04M+ShLg==",
+  "success": true,
+  "projectFilePath": "/home/yohansh/asp_starter/exp_solution/solution_testing_pro/solution_testing_pro.csproj",
+  "expectedPackageFiles": [
+    "/home/yohansh/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.10/microsoft.aspnetcore.app.ref.7.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

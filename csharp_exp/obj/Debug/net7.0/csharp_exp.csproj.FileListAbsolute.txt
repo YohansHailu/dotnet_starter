@@ -1,0 +1,15 @@
+/home/yohansh/asp_starter/csharp_exp/bin/Debug/net7.0/csharp_exp
+/home/yohansh/asp_starter/csharp_exp/bin/Debug/net7.0/csharp_exp.deps.json
+/home/yohansh/asp_starter/csharp_exp/bin/Debug/net7.0/csharp_exp.runtimeconfig.json
+/home/yohansh/asp_starter/csharp_exp/bin/Debug/net7.0/csharp_exp.dll
+/home/yohansh/asp_starter/csharp_exp/bin/Debug/net7.0/csharp_exp.pdb
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.csproj.AssemblyReference.cache
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.GeneratedMSBuildEditorConfig.editorconfig
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.AssemblyInfoInputs.cache
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.AssemblyInfo.cs
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.csproj.CoreCompileInputs.cache
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.dll
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/refint/csharp_exp.dll
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.pdb
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/csharp_exp.genruntimeconfig.cache
+/home/yohansh/asp_starter/csharp_exp/obj/Debug/net7.0/ref/csharp_exp.dll

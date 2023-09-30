@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "another_solution_testing_pro/1.0.0": {
+        "runtime": {
+          "another_solution_testing_pro.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "another_solution_testing_pro/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

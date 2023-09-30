@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "another_solution_testing_pro/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/another_solution_testing_pro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/another_solution_testing_pro.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "another_solution_testing_pro/1.0.0": {
+      "type": "project",
+      "path": "../another_solution_testing_pro/another_solution_testing_pro.csproj",
+      "msbuildProject": "../another_solution_testing_pro/another_solution_testing_pro.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "another_solution_testing_pro >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/yohansh/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/yohansh/asp_starter/exp_solution/solution_testing_pro/solution_testing_pro.csproj",
+      "projectName": "solution_testing_pro",
+      "projectPath": "/home/yohansh/asp_starter/exp_solution/solution_testing_pro/solution_testing_pro.csproj",
+      "packagesPath": "/home/yohansh/.nuget/packages/",
+      "outputPath": "/home/yohansh/asp_starter/exp_solution/solution_testing_pro/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/yohansh/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/home/yohansh/asp_starter/exp_solution/another_solution_testing_pro/another_solution_testing_pro.csproj": {
+              "projectPath": "/home/yohansh/asp_starter/exp_solution/another_solution_testing_pro/another_solution_testing_pro.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.10, 7.0.10]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

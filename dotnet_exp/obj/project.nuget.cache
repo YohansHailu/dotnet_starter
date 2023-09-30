@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "xBf3s1myV/mTmRAn/hVl6USTTBT3VohDt+IjoQDpRAhZwXPy6xyAqZZ6T+vAyx3RNjzu4NOlcqQpLvLuP8NFHQ==",
+  "success": true,
+  "projectFilePath": "/home/yohansh/asp_starter/dotnet_exp/dotnet_exp.csproj",
+  "expectedPackageFiles": [
+    "/home/yohansh/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.11/microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

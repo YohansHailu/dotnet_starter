@@ -1,0 +1,12 @@
+/home/yohansh/asp_starter/Clean_starter/core/bin/Debug/net7.0/core.deps.json
+/home/yohansh/asp_starter/Clean_starter/core/bin/Debug/net7.0/core.dll
+/home/yohansh/asp_starter/Clean_starter/core/bin/Debug/net7.0/core.pdb
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.csproj.AssemblyReference.cache
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.GeneratedMSBuildEditorConfig.editorconfig
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.AssemblyInfoInputs.cache
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.AssemblyInfo.cs
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.csproj.CoreCompileInputs.cache
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.dll
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/refint/core.dll
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/core.pdb
+/home/yohansh/asp_starter/Clean_starter/core/obj/Debug/net7.0/ref/core.dll

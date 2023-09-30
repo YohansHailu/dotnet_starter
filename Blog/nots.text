@@ -1,0 +1,18 @@
+--Swagger
+
+# create models
+# create database
+  # add autho date and auto id
+  # add validation
+    # no empty content
+    # no empty comment
+    # no harmfull comment
+  # add unit test
+
+# add user 
+# authentication
+  # only poaster can delete
+  # only commenter can delete
+  # admin can delte theme himself
+  # add admin --> he can delete
+
