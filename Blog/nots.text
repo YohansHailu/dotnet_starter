@@ -1,5 +1,6 @@
 --Swagger
 ? what is Service Method 
+? what is CORS
 
 # create models
 # create database
@@ -8,6 +9,7 @@
     # no empty content
     # no empty comment
     # no harmfull comment
+
   # add unit test
 
 # 

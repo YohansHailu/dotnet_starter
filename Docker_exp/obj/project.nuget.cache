@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SwmjWv2AvXX13zuS9Il53LmmQebP3uzE+lsx9rG6cYykb6n0WAMt8PvwkTV9FFC3XroDrSm5OZN/FnBRJ3av/A==",
+  "success": true,
+  "projectFilePath": "/home/yohansh/asp_starter/Docker_exp/Docker_exp.csproj",
+  "expectedPackageFiles": [
+    "/home/yohansh/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.11/microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
