@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Blog.Models;
 
+namespace Blog.Context;
 public class BlogDbContext : DbContext
 {
 
@@ -21,7 +23,6 @@ public class BlogDbContext : DbContext
         modelBuilder.Entity<Comment>()
           .HasOne(c => c.Post)
           .WithMany(p => p.Comments)
-          .HasForeignKey(c => c.PostId)
-          .OnDelete(DeleteBehavior.NoAction);
+          .HasForeignKey(c => c.PostId).OnDelete(DeleteBehavior.Cascade);
     }
 }

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Blog.Context;
+using Blog.Models;
 
 [ApiController]
 [Route("/api/comments")]
