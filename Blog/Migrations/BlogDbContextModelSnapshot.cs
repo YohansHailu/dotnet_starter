@@ -50,14 +50,12 @@ namespace Blog.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Body")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("UpdatedAt")

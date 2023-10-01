@@ -8,9 +8,9 @@ public class BlogDbContext : DbContext
     public DbSet<Post> Posts { get; set; }
     public DbSet<Comment> Comments { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    // add constructure with option builder
+    public BlogDbContext(DbContextOptions<BlogDbContext> options) : base(options)
     {
-        optionsBuilder.UseSqlite("Data Source=blog_database.db");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

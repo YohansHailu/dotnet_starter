@@ -4,14 +4,14 @@
     "/home/yohansh/asp_starter/test_dir/test_dir.csproj": {}
   },
   "projects": {
-    "/home/yohansh/asp_starter/test_dir/test_dir.csproj": {
+    "/home/yohansh/asp_starter/Blog/Blog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/yohansh/asp_starter/test_dir/test_dir.csproj",
-        "projectName": "test_dir",
-        "projectPath": "/home/yohansh/asp_starter/test_dir/test_dir.csproj",
+        "projectUniqueName": "/home/yohansh/asp_starter/Blog/Blog.csproj",
+        "projectName": "Blog",
+        "projectPath": "/home/yohansh/asp_starter/Blog/Blog.csproj",
         "packagesPath": "/home/yohansh/.nuget/packages/",
-        "outputPath": "/home/yohansh/asp_starter/test_dir/obj/",
+        "outputPath": "/home/yohansh/asp_starter/Blog/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/yohansh/.nuget/NuGet/NuGet.Config"
@@ -38,9 +38,115 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.11, 7.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/yohansh/asp_starter/test_dir/test_dir.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/yohansh/asp_starter/test_dir/test_dir.csproj",
+        "projectName": "test_dir",
+        "projectPath": "/home/yohansh/asp_starter/test_dir/test_dir.csproj",
+        "packagesPath": "/home/yohansh/.nuget/packages/",
+        "outputPath": "/home/yohansh/asp_starter/test_dir/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/yohansh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/yohansh/asp_starter/Blog/Blog.csproj": {
+                "projectPath": "/home/yohansh/asp_starter/Blog/Blog.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

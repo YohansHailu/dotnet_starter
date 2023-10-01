@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Blog.Context;
 using Blog.Models;
+using Newtonsoft.Json.Linq;
+
+namespace Blog.Controllers;
 
 [ApiController]
 [Route("/api/posts")]
@@ -16,7 +19,8 @@ public class postController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
     {
-        return await _context.Posts.ToListAsync();
+        var posts = await _context.Posts.ToListAsync();
+        return Ok(posts);
     }
 
     [HttpGet("{id}")]
@@ -29,28 +33,47 @@ public class postController : ControllerBase
             return NotFound();
         }
 
-        return post;
+        return Ok(post);
     }
 
     [HttpPost]
     public async Task<ActionResult<Post>> PostPost(Post post)
     {
-        _context.Posts.Add(post);
-        await _context.SaveChangesAsync();
+        try
+        {
+            _context.Posts.Add(post);
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
 
         return CreatedAtAction(nameof(GetPost), new { id = post.Id }, post);
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutPost(int id, Post post)
+    public async Task<IActionResult> PutPost(int id, Post updated_post)
     {
-        if (id != post.Id)
-        {
-            return BadRequest();
-        }
 
-        _context.Entry(post).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
+        //check if id exists 
+        var old_post = await _context.Posts.FindAsync(id);
+        if (old_post == null || old_post.Id != id)
+        {
+            return NotFound();
+        }
+        try
+        {
+            old_post.Title = updated_post.Title ?? old_post.Title;
+            old_post.Body = updated_post.Body ?? old_post.Body;
+            _context.Entry(old_post).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception e)
+        {
+
+            return BadRequest(e.Message);
+        }
 
         return NoContent();
     }
@@ -74,14 +97,14 @@ public class postController : ControllerBase
     [HttpGet("{id}/comments")]
     public async Task<ActionResult<IEnumerable<Comment>>> GetComments(int id)
     {
-        var post = await _context.Posts.FindAsync(id);
+        var post = await _context.Posts.Include(p => p.Comments).FirstOrDefaultAsync(p => p.Id == id);
 
         if (post == null)
         {
             return NotFound();
         }
 
-        return post.Comments;
+        return Ok(post.Comments);
     }
 
 

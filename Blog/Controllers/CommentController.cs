@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Blog.Context;
 using Blog.Models;
 
+namespace Blog.Controllers;
 [ApiController]
 [Route("/api/comments")]
 public class commentController : ControllerBase
