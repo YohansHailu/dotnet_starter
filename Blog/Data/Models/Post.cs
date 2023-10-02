@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Blog.Validation;
+using Newtonsoft.Json;
 
 namespace Blog.Models;
 
@@ -22,6 +23,11 @@ public class Post
     public DateTime UpdatedAt { get; set; }
 
     public List<Comment>? Comments { get; set; }
+
+    public int UserId { get; set; }
+
+
+    public User? User { get; set; }
 
     public Post()
     {

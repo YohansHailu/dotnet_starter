@@ -13,9 +13,20 @@
 
   # add unit test
 
-# 
-
 # add user 
+  # will have profile
+  # authentication
+
+  # users will own posts and comment
+
+  # every comment will have a user
+  # and every post will have a user 
+
+  # user end points
+
+  # user login and signup 
+
+
 # authentication
   # only poaster can delete
   # only commenter can delete
@@ -28,4 +39,3 @@
 
 
 # user can have profile picture
-

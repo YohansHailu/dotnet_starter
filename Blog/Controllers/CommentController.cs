@@ -6,10 +6,10 @@ using Blog.Models;
 namespace Blog.Controllers;
 [ApiController]
 [Route("/api/comments")]
-public class commentController : ControllerBase
+public class CommentController : ControllerBase
 {
     public BlogDbContext _context;
-    public commentController(BlogDbContext context)
+    public CommentController(BlogDbContext context)
     {
         _context = context;
     }

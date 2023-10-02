@@ -7,11 +7,11 @@ using Newtonsoft.Json.Linq;
 namespace Blog.Controllers;
 
 [ApiController]
-[Route("/api/posts")]
-public class postController : ControllerBase
+[Route("/api/[controller]")]
+public class PostController : ControllerBase
 {
     private readonly BlogDbContext _context;
-    public postController(BlogDbContext context)
+    public PostController(BlogDbContext context)
     {
         _context = context;
     }
