@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Blog.Validation;
 
 namespace Blog.Models;
