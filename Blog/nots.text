@@ -1,6 +1,5 @@
-# domain // have eneties with it not a db context
-  * lets have a folder with a common
 # application // this is cqrs part 
+# implement sqrs pattern
 
 # authentication
   # only poaster can delete
