@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/FOkkMsemV4qBE1oTPRYmHzRf2OYJipaq169OkIDCELAuO6KBs6OMh7bSPNOjZkVg5ZNpNUmb8CkY4P135wZnw==",
+  "dgSpecHash": "DjSQGBpxFr5hJwKTT1VUhBV7yAN4fxFX7JHwQ4/2ZjK8ahqASU+dFrz5LZpY8Ej1zOtlejULBf7WyYoix7BOeQ==",
   "success": true,
   "projectFilePath": "/home/yohansh/asp_starter/Blog/Blog.csproj",
   "expectedPackageFiles": [
     "/home/yohansh/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/yohansh/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "/home/yohansh/.nuget/packages/microsoft.data.sqlite.core/7.0.11/microsoft.data.sqlite.core.7.0.11.nupkg.sha512",
     "/home/yohansh/.nuget/packages/microsoft.entityframeworkcore/7.0.11/microsoft.entityframeworkcore.7.0.11.nupkg.sha512",

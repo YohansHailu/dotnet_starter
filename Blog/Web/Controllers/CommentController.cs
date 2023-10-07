@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Blog.Context;
 using Blog.Models;
+using MediatR;
 
 namespace Blog.Controllers;
 [ApiController]
@@ -9,16 +9,20 @@ namespace Blog.Controllers;
 public class CommentController : ControllerBase
 {
     public BlogDbContext _context;
-    public CommentController(BlogDbContext context)
+    private readonly IMediator _mediator;
+
+    public CommentController(BlogDbContext context, IMediator mediator)
     {
         _context = context;
+        _mediator = mediator;
     }
 
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Comment>>> GetComments()
     {
-        return await _context.Comments.ToListAsync();
+        var result = await _mediator.Send(new GetComments());
+        return Ok(result);
     }
 
     [HttpGet("{id}")]
@@ -41,7 +45,7 @@ public class CommentController : ControllerBase
         var post = await _context.Posts.FindAsync(comment.PostId);
         if (post == null)
         {
-            return NotFound();
+            return NotFound("post is not found");
         }
         _context.Comments.Add(comment);
         await _context.SaveChangesAsync();
