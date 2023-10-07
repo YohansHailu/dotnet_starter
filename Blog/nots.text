@@ -1,31 +1,6 @@
---Swagger
-? what is Service Method 
-? what is CORS
-? what is action Result
-
-# create models
-# create database
-  # add autho date and auto id
-  # add validation
-    # no empty content
-    # no empty comment
-    # no harmfull comment
-
-  # add unit test
-
-# add user 
-  # will have profile
-  # authentication
-
-  # users will own posts and comment
-
-  # every comment will have a user
-  # and every post will have a user 
-
-  # user end points
-
-  # user login and signup 
-
+# domain // have eneties with it not a db context
+  * lets have a folder with a common
+# application // this is cqrs part 
 
 # authentication
   # only poaster can delete
@@ -33,9 +8,5 @@
   # admin can delte theme himself
   # add admin --> he can delete
 
-
-# use Swagger
-# paginiation 
-
-
 # user can have profile picture
+# use enum to for posts dificulity

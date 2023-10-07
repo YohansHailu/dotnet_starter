@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Blog.Migrations
+namespace Blog.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(BlogDbContext))]
-    [Migration("20231002061330_initial")]
-    partial class initial
+    [Migration("20231007064737_initiola")]
+    partial class initiola
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
