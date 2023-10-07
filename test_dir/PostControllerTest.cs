@@ -9,7 +9,7 @@ namespace test_dir;
 public class PostControllerTest
 {
 
-    private postController _controller;
+    private PostController _controller;
     private DbContextOptions<BlogDbContext> _dbContextOptions;
     Post[] MockPosts = new Post[]{ new Post { Title = "Post 1", Body = "Content 1" },
               new Post { Title = "Post 2", Body = "Content 2" },
@@ -30,7 +30,7 @@ public class PostControllerTest
             dbContext.Posts.AddRange(MockPosts);
 
             dbContext.SaveChanges();
-            _controller = new postController(new BlogDbContext(_dbContextOptions));
+            _controller = new PostController(new BlogDbContext(_dbContextOptions));
         }
     }
 
