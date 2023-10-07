@@ -9,3 +9,19 @@
 
 # user can have profile picture
 # use enum to for posts dificulity
+
+
+
+
+
+
+    :bug: or :beetle: - Represents bug fixes.
+    :sparkles: - Represents new features or enhancements.
+    :memo: - Represents documentation changes.
+    :wrench: - Represents maintenance or configuration changes.
+    :recycle: - Represents refactoring of code.
+    :white_check_mark: or :heavy_check_mark: - Represents test-related changes or adding tests.
+    :art: - Represents code style or formatting changes.
+    :chart_with_upwards_trend: - Represents performance improvements.
+    :twisted_rightwards_arrows: - Represents merge-related changes.
+    :back: or :rewind: - Represents commit reverting.
