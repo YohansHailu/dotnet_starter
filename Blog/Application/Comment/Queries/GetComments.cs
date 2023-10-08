@@ -7,8 +7,6 @@ public class GetComments : IRequest<List<Comment>>
 {
 };
 
-// handler
-
 public class GetCommentsHandler : IRequestHandler<GetComments, List<Comment>>
 {
     private readonly BlogDbContext _context;
@@ -23,4 +21,3 @@ public class GetCommentsHandler : IRequestHandler<GetComments, List<Comment>>
         return await _context.Comments.ToListAsync();
     }
 }
-

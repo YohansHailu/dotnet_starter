@@ -22,49 +22,52 @@ public class CommentController : ControllerBase
     public async Task<ActionResult<IEnumerable<Comment>>> GetComments()
     {
         var result = await _mediator.Send(new GetComments());
+        if (result == null)
+        {
+            return NotFound();
+        }
         return Ok(result);
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Comment>> GetComment(int id)
     {
-        var comment = await _context.Comments.Include(c => c.Post).FirstOrDefaultAsync(c => c.Id == id);
-
-        if (comment == null)
+        var result = await _mediator.Send(new GetComments());
+        if (result == null)
         {
             return NotFound();
         }
-        // return post object of comment
-        return comment;
+        return Ok(result);
 
     }
 
     [HttpPost]
     public async Task<ActionResult<Comment>> PostComment(Comment comment)
     {
-        var post = await _context.Posts.FindAsync(comment.PostId);
-        if (post == null)
+        try
         {
-            return NotFound("post is not found");
+            await _mediator.Send(new AddComment(comment));
         }
-        _context.Comments.Add(comment);
-        await _context.SaveChangesAsync();
+        catch (Exception e)
+        {
+            return NotFound(e);
+        }
 
-        return CreatedAtAction(nameof(GetComment), new { id = comment.Id }, comment);
+        return Ok(CreatedAtAction(nameof(GetComment), new { id = comment.Id }, comment));
     }
 
     //delete 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteComment(int id)
     {
-        var comment = await _context.Comments.FindAsync(id);
-        if (comment == null)
+        try
         {
-            return NotFound();
+            await _mediator.Send(new DeleteComment(id));
         }
-
-        _context.Comments.Remove(comment);
-        await _context.SaveChangesAsync();
+        catch (Exception e)
+        {
+            return NotFound(e.Message);
+        }
 
         return NoContent();
     }
