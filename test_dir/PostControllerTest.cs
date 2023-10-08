@@ -11,6 +11,7 @@ public class PostControllerTest
 
     private PostController _controller;
     private DbContextOptions<BlogDbContext> _dbContextOptions;
+
     Post[] MockPosts = new Post[]{ new Post { Title = "Post 1", Body = "Content 1" },
               new Post { Title = "Post 2", Body = "Content 2" },
               new Post { Title = "Post 3", Body = "Content 3" },
