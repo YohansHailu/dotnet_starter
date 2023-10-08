@@ -144,3 +144,5 @@
 /home/yohansh/asp_starter/test_dir/bin/Debug/net7.0/Castle.Core.dll
 /home/yohansh/asp_starter/test_dir/bin/Debug/net7.0/Moq.dll
 /home/yohansh/asp_starter/test_dir/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/home/yohansh/asp_starter/test_dir/bin/Debug/net7.0/MediatR.dll
+/home/yohansh/asp_starter/test_dir/bin/Debug/net7.0/MediatR.Contracts.dll

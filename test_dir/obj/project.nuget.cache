@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "IaZunQQYgNYbBYucSAdIzFEHTLIAe8B+3mYupD+vEM1CxaoewFxO+nlwLgY8Enko9y5BCTgwkrBNh140GD1eWg==",
+  "dgSpecHash": "6geTIuqGW2YNY6/IUdGH4KlU85vUOfy2zZ2Nx1n19VR33ItSBypwAXfdJatHCG+JXSic337m8j5VHaUUYyh0tQ==",
   "success": true,
   "projectFilePath": "/home/yohansh/asp_starter/test_dir/test_dir.csproj",
   "expectedPackageFiles": [
     "/home/yohansh/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/home/yohansh/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/home/yohansh/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/yohansh/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "/home/yohansh/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",
     "/home/yohansh/.nuget/packages/microsoft.data.sqlite.core/7.0.11/microsoft.data.sqlite.core.7.0.11.nupkg.sha512",
